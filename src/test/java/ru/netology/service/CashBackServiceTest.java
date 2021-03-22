@@ -14,6 +14,6 @@ public class CashBackServiceTest {
 
     @Test
     public void shouldCheckRemainIfAmountEqualToBoundary() {
-        assertEquals(1000, cashBackService.remain(1000));
+        assertEquals(0, cashBackService.remain(1000));
     }
 }
