@@ -9,11 +9,11 @@ public class CashBackServiceTest {
 
     @Test
     public void shouldCheckRemain() {
-        assertEquals(100, cashBackService.remain(900));
+        assertEquals(cashBackService.remain(900), 100);
     }
 
     @Test
     public void shouldCheckRemainIfAmountEqualToBoundary() {
-        assertEquals(0, cashBackService.remain(1000));
+        assertEquals(cashBackService.remain(1000), 0);
     }
 }
